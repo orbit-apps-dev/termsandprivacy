@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de privacidade — CVGen</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem 4rem; line-height: 1.65; color: #1e293b; }
+    h1 { font-size: 1.5rem; color: #1A365D; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; color: #0f172a; }
+    a { color: #1A365D; }
+    nav { margin-bottom: 1.5rem; font-size: 0.95rem; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.9rem; margin: 0.75rem 0; }
+    th, td { border: 1px solid #e2e8f0; padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+    th { background: #f8fafc; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="termos.html">Termos de uso</a>
+    · <a href="mailto:contact@orbitapps.dev">contact@orbitapps.dev</a>
+  </nav>
+<h1>Política de privacidade — CVGen</h1>
+<p><strong>Última atualização:</strong> abril de 2026</p>
+<p>A <strong>Orbit Apps</strong> (“<strong>nós</strong>”, “<strong>Operador</strong>”) respeita a sua privacidade. Esta Política descreve como tratamos dados pessoais no aplicativo <strong>CVGen</strong> (“<strong>App</strong>”), em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD)</strong> e legislação aplicável.</p>
+<p><strong>Encarregado / contato:</strong> <a href="mailto:contact@orbitapps.dev">contact@orbitapps.dev</a></p>
+<hr>
+<h2>1. Quem é o controlador</h2>
+<p>O <strong>controlador</strong> dos dados pessoais tratados para a prestação do serviço CVGen é a <strong>Orbit Apps</strong>, responsável pelas decisões referentes ao tratamento descrito nesta Política.</p>
+<hr>
+<h2>2. Quais dados coletamos</h2>
+<p>Dependendo de como você usa o App, podemos tratar:</p>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Exemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dados de conta</strong></td>
+<td>E-mail, identificador de usuário (Supabase Auth), senha (armazenada de forma segura pelo provedor de autenticação).</td>
+</tr>
+<tr>
+<td><strong>Conteúdo do currículo</strong></td>
+<td>Nome, telefone, e-mail, experiências, formação, texto de carta, fotografia opcional, preferências de modelo e idioma do documento.</td>
+</tr>
+<tr>
+<td><strong>Dados técnicos e de uso</strong></td>
+<td>Tipo de dispositivo, sistema operacional, identificadores de app, logs de erro (quando necessários), dados de rede básicos.</td>
+</tr>
+<tr>
+<td><strong>Compras e assinaturas</strong></td>
+<td>Identificadores de assinatura e status de plano processados pelas <strong>lojas</strong> (Apple/Google) e <strong>RevenueCat</strong> (ou equivalente), sem que armazenemos o número completo do cartão (tratado apenas pelas lojas).</td>
+</tr>
+<tr>
+<td><strong>Dados de IA (Pro+)</strong></td>
+<td>Trechos de texto que você enviar para recursos de <strong>sugestão</strong>, processados conforme a seção 6.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fotografia:</strong> se você adicionar foto ao currículo, ela pode ser armazenada <strong>localmente</strong> e, com sincronização ativada, em <strong>armazenamento seguro</strong> na nuvem (bucket privado), associada à sua conta.</p>
+<hr>
+<h2>3. Finalidades e bases legais (LGPD)</h2>
+<p>Tratamos dados pessoais para:</p>
+<ul>
+<li><strong>Execução do contrato / uso do App</strong> — criar e editar currículos, exportar PDF, sincronizar quando habilitado (art. 7º, V e VII, LGPD).</li>
+<li><strong>Consentimento</strong> — quando exigido para funcionalidades opcionais (por exemplo, permissões do sistema ou recursos de IA), mediante aceite ou configurações do dispositivo.</li>
+<li><strong>Legítimo interesse</strong> — segurança, prevenção a fraudes, melhoria do serviço e métricas agregadas, observados seus direitos (art. 7º, IX).</li>
+<li><strong>Cumprimento de obrigação legal</strong> — quando exigido por lei ou ordem judicial.</li>
+</ul>
+<hr>
+<h2>4. Compartilhamento com terceiros</h2>
+<p>Podemos depender de <strong>prestadores</strong> estritamente necessários:</p>
+<ul>
+<li><strong>Supabase</strong> (autenticação, banco de dados e armazenamento de arquivos do currículo/foto, conforme configuração do projeto).</li>
+<li><strong>Apple / Google</strong> — para compras in-app, login e distribuição do App.</li>
+<li><strong>RevenueCat</strong> (ou similar) — gestão de assinaturas e entitlements.</li>
+<li><strong>Provedor de IA</strong> — quando você usa sugestões com IA, o texto enviado é processado por <strong>funções do Operador</strong> (Edge Functions) e pode ser encaminhado a <strong>provedor de modelo</strong> (por exemplo, OpenAI), <strong>sem</strong> treinar modelos com seus dados pessoais para fins comerciais do provedor, salvo política própria do provedor aplicável naquele momento.</li>
+</ul>
+<p><strong>Não vendemos</strong> seus dados pessoais a terceiros para marketing.</p>
+<hr>
+<h2>5. Transferência internacional</h2>
+<p>Alguns provedores podem processar dados <strong>fora do Brasil</strong>. Nesses casos, adotamos medidas compatíveis com a LGPD (por exemplo, cláusulas contratuais ou avaliação de local adequado), conforme aplicável.</p>
+<hr>
+<h2>6. IA e cache</h2>
+<p>Para reduzir custos e repetições, sugestões podem ser <strong>armazenadas em cache</strong> associadas à sua conta e ao documento (hash do trecho analisado). Você pode <strong>aceitar, editar ou descartar</strong> sugestões; o conteúdo final do currículo permanece sob seu controle.</p>
+<hr>
+<h2>7. Retenção</h2>
+<ul>
+<li>Mantemos os dados <strong>enquanto sua conta estiver ativa</strong> ou conforme necessário para prestação do serviço.</li>
+<li>Após exclusão da conta ou exclusão solicitada, poderemos <strong>anonimizar</strong> ou <strong>apagar</strong> dados em prazos razoáveis, salvo cumprimento legal ou resolução de litígio.</li>
+<li><strong>Backups</strong> podem reter cópias por período técnico limitado.</li>
+</ul>
+<hr>
+<h2>8. Seus direitos (LGPD)</h2>
+<p>Você pode solicitar:</p>
+<ul>
+<li><strong>Confirmação</strong> de tratamento e <strong>acesso</strong> aos dados;</li>
+<li><strong>Correção</strong> de dados incompletos ou desatualizados;</li>
+<li><strong>Anonimização, bloqueio ou eliminação</strong> de dados desnecessários ou excessivos;</li>
+<li><strong>Portabilidade</strong>, quando aplicável;</li>
+<li><strong>Informação</strong> sobre compartilhamentos;</li>
+<li><strong>Revogação de consentimento</strong>, quando o tratamento depender dele.</li>
+</ul>
+<p>Pedidos podem ser feitos pelo e-mail <strong>contact@orbitapps.dev</strong>. Podemos solicitar informações para <strong>confirmar sua identidade</strong>.</p>
+<hr>
+<h2>9. Segurança</h2>
+<p>Adotamos medidas técnicas e organizacionais razoáveis (por exemplo, HTTPS, controles de acesso, armazenamento seguro de segredos em ambiente servidor). <strong>Nenhum sistema é 100% seguro</strong>; use senha forte e proteja seu dispositivo.</p>
+<hr>
+<h2>10. Crianças e adolescentes</h2>
+<p>O App não se destina a menores de <strong>16 anos</strong> (ou idade mínima local). Se tomarmos conhecimento de cadastro indevido, tomaremos medidas para remover os dados.</p>
+<hr>
+<h2>11. Cookies e tecnologias similares</h2>
+<p>Em versões <strong>web</strong> (se houver), podem ser usados cookies ou armazenamento local conforme o navegador. No app nativo, utilizamos armazenamento local do sistema para sessão e preferências.</p>
+<hr>
+<h2>12. Alterações desta Política</h2>
+<p>Podemos <strong>atualizar</strong> esta Política. A data no topo será revisada. Alterações relevantes serão comunicadas por meio razoável (por exemplo, no App ou por e-mail). O uso continuado após a vigência pode indicar ciência das mudanças, quando permitido pela lei.</p>
+<hr>
+<h2>13. Contato</h2>
+<p><strong>Privacidade e dúvidas:</strong> contact@orbitapps.dev</p>
+<p>Você também pode acionar a <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> nos termos da legislação.</p>
+<hr>
+<p><em>Recomenda-se revisão jurídica antes da publicação definitiva.</em></p>
+</body>
+</html>

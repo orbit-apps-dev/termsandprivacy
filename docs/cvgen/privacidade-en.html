@@ -58,6 +58,10 @@
 <td>Subscription identifiers and plan status processed by the <strong>stores</strong> (Apple/Google) and <strong>RevenueCat</strong> (or equivalent), without our storing your full card number (handled only by the stores).</td>
 </tr>
 <tr>
+<td><strong>Product metrics</strong></td>
+<td>Usage events (e.g. screens viewed, onboarding completion), app version, and a pseudonymous device identifier; when configured, sent to <strong>PostHog</strong> (or equivalent) to improve the service.</td>
+</tr>
+<tr>
 <td><strong>AI data (Pro+)</strong></td>
 <td>Text excerpts you submit to <strong>suggestion</strong> features, processed as described in section 6.</td>
 </tr>
@@ -80,6 +84,7 @@
 <li><strong>Supabase</strong> (authentication, database, and storage of résumé/photo files, per project configuration).</li>
 <li><strong>Apple / Google</strong> — for in-app purchases, sign-in, and app distribution.</li>
 <li><strong>RevenueCat</strong> (or similar) — subscription and entitlement management.</li>
+<li><strong>PostHog</strong> (or equivalent) — product metrics and diagnostics when enabled via app environment variables; we do not sell your personal data for marketing.</li>
 <li><strong>AI provider</strong> — when you use AI suggestions, the text sent is processed through the Operator’s <strong>functions</strong> (Edge Functions) and may be forwarded to a <strong>model provider</strong> (e.g. OpenAI), <strong>without</strong> using your personal data to train models for the provider’s commercial purposes, except as stated in the provider’s policy applicable at the time.</li>
 </ul>
 <p>We do <strong>not sell</strong> your personal data to third parties for marketing.</p>
@@ -93,8 +98,9 @@
 <h2>7. Retention</h2>
 <ul>
 <li>We keep data <strong>while your account is active</strong> or as needed to provide the service.</li>
-<li>After account deletion or a deletion request, we may <strong>anonymize</strong> or <strong>delete</strong> data within reasonable timeframes, except where retention is required by law or dispute resolution.</li>
+<li>After account deletion or a deletion request, we may <strong>anonymize</strong> or <strong>delete</strong> data within reasonable timeframes, except where retention is required by law or dispute resolution. Deletion via the <strong>Account</strong> screen removes the auth user and associated cloud data per our infrastructure (including AI cache tied to documents), subject to temporary backups.</li>
 <li><strong>Backups</strong> may retain copies for a limited technical period.</li>
+<li>Analytics provider logs follow that provider’s retention policies, in aggregate or pseudonymous form.</li>
 </ul>
 <hr>
 <h2>8. Your rights (LGPD)</h2>
@@ -108,6 +114,7 @@
 <li><strong>Withdrawal of consent</strong>, when processing is based on consent.</li>
 </ul>
 <p>Requests can be sent to <strong>contact@orbitapps.dev</strong>. We may ask for information to <strong>verify your identity</strong>.</p>
+<p><strong>Metrics:</strong> you may request object or clarification on processing for product improvement via the same email. After account deletion, we stop associating your user identifier with events sent thereafter, subject to the provider’s technical policies. Fully disabling collection while using the App may require support contact or a future in-app setting.</p>
 <hr>
 <h2>9. Security</h2>
 <p>We adopt reasonable technical and organizational measures (e.g. HTTPS, access controls, secure storage of secrets on the server). <strong>No system is 100% secure</strong>; use a strong password and protect your device.</p>

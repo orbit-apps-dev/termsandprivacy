@@ -58,6 +58,10 @@
 <td>Identificadores de assinatura e status de plano processados pelas <strong>lojas</strong> (Apple/Google) e <strong>RevenueCat</strong> (ou equivalente), sem que armazenemos o número completo do cartão (tratado apenas pelas lojas).</td>
 </tr>
 <tr>
+<td><strong>Métricas de produto</strong></td>
+<td>Eventos de uso (por exemplo, telas visitadas, conclusão do tour inicial), versão do app e identificador pseudônimo no aparelho; quando configurado, enviados ao <strong>PostHog</strong> (ou equivalente) para melhorar o serviço.</td>
+</tr>
+<tr>
 <td><strong>Dados de IA (Pro+)</strong></td>
 <td>Trechos de texto que você enviar para recursos de <strong>sugestão</strong>, processados conforme a seção 6.</td>
 </tr>
@@ -80,6 +84,7 @@
 <li><strong>Supabase</strong> (autenticação, banco de dados e armazenamento de arquivos do currículo/foto, conforme configuração do projeto).</li>
 <li><strong>Apple / Google</strong> — para compras in-app, login e distribuição do App.</li>
 <li><strong>RevenueCat</strong> (ou similar) — gestão de assinaturas e entitlements.</li>
+<li><strong>PostHog</strong> (ou equivalente) — métricas de produto e diagnóstico, quando ativado nas variáveis de ambiente do App; não vendemos seus dados pessoais para marketing.</li>
 <li><strong>Provedor de IA</strong> — quando você usa sugestões com IA, o texto enviado é processado por <strong>funções do Operador</strong> (Edge Functions) e pode ser encaminhado a <strong>provedor de modelo</strong> (por exemplo, OpenAI), <strong>sem</strong> treinar modelos com seus dados pessoais para fins comerciais do provedor, salvo política própria do provedor aplicável naquele momento.</li>
 </ul>
 <p><strong>Não vendemos</strong> seus dados pessoais a terceiros para marketing.</p>
@@ -93,8 +98,9 @@
 <h2>7. Retenção</h2>
 <ul>
 <li>Mantemos os dados <strong>enquanto sua conta estiver ativa</strong> ou conforme necessário para prestação do serviço.</li>
-<li>Após exclusão da conta ou exclusão solicitada, poderemos <strong>anonimizar</strong> ou <strong>apagar</strong> dados em prazos razoáveis, salvo cumprimento legal ou resolução de litígio.</li>
+<li>Após exclusão da conta ou exclusão solicitada, poderemos <strong>anonimizar</strong> ou <strong>apagar</strong> dados em prazos razoáveis, salvo cumprimento legal ou resolução de litígio. A exclusão pela tela <strong>Conta</strong> remove o usuário de autenticação e os dados associados na nuvem conforme a infraestrutura (incluindo cache de IA ligado aos documentos), ressalvados backups temporários.</li>
 <li><strong>Backups</strong> podem reter cópias por período técnico limitado.</li>
+<li>Registros de métricas no prestador de analytics seguem prazos e políticas desse prestador, em forma agregada ou pseudônima.</li>
 </ul>
 <hr>
 <h2>8. Seus direitos (LGPD)</h2>
@@ -108,6 +114,7 @@
 <li><strong>Revogação de consentimento</strong>, quando o tratamento depender dele.</li>
 </ul>
 <p>Pedidos podem ser feitos pelo e-mail <strong>contact@orbitapps.dev</strong>. Podemos solicitar informações para <strong>confirmar sua identidade</strong>.</p>
+<p><strong>Métricas:</strong> pode solicitar oposição ou esclarecimentos sobre o tratamento para melhoria do produto pelo mesmo e-mail. Com a conta excluída, deixamos de associar seu identificador de usuário aos eventos enviados após a exclusão, nos termos técnicos do prestador. Para desativar a coleta por completo enquanto usa o App, pode ser necessário contato com o suporte ou configuração futura no próprio App.</p>
 <hr>
 <h2>9. Segurança</h2>
 <p>Adotamos medidas técnicas e organizacionais razoáveis (por exemplo, HTTPS, controles de acesso, armazenamento seguro de segredos em ambiente servidor). <strong>Nenhum sistema é 100% seguro</strong>; use senha forte e proteja seu dispositivo.</p>

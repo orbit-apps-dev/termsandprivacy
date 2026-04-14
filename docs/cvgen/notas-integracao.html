@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CVGen — Notas de integração</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem 4rem; line-height: 1.65; color: #1e293b; }
+    h1 { font-size: 1.5rem; color: #1A365D; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; color: #0f172a; }
+    a { color: #1A365D; }
+    nav { margin-bottom: 1.5rem; font-size: 0.95rem; }
+    code { font-size: 0.9em; background: #f1f5f9; padding: 0.1rem 0.35rem; border-radius: 4px; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="integration-notes-en.html">English</a>
+    · <a href="../index.html">Índice Orbit Apps</a>
+    · <a href="mailto:contact@orbitapps.dev">contact@orbitapps.dev</a>
+  </nav>
+
+  <h1>CVGen — Notas de integração (app / lojas)</h1>
+  <p>Página interna de referência para equipe: RevenueCat, produtos consumíveis e paywall de melhorias com IA. Não substitui os <a href="termos.html">Termos</a> nem a <a href="privacidade.html">Política de privacidade</a>.</p>
+
+  <h2>Documentos legais (URLs públicas)</h2>
+  <ul>
+    <li><a href="termos.html">Termos de uso</a> · <a href="termos-en.html">Terms of Use (EN)</a></li>
+    <li><a href="privacidade.html">Política de privacidade</a> · <a href="privacidade-en.html">Privacy Policy (EN)</a></li>
+  </ul>
+
+  <h2>Nome na interface e nas lojas</h2>
+  <p>Em inglês o produto é referido como <strong>AI Edits</strong>. No app em português do Brasil usamos <strong>melhoria(s) com IA</strong>. O saldo numérico no backend continua em <code>profiles.ai_credits</code> (cada unidade = 1 melhoria).</p>
+
+  <h2>Produtos consumíveis (App Store / Google Play / RevenueCat)</h2>
+  <ul>
+    <li><code>cvgen.pro_10edits</code> — pacote +10 melhorias</li>
+    <li><code>cvgen.pro_30edits</code> — pacote +30 melhorias</li>
+  </ul>
+  <p>Override opcional no app: <code>EXPO_PUBLIC_AI_EDIT_PACK_PRODUCT_ID_10</code> e <code>EXPO_PUBLIC_AI_EDIT_PACK_PRODUCT_ID_30</code>.</p>
+
+  <h2>Offering <code>credits_offering</code> (RevenueCat Paywalls)</h2>
+  <p>Foi criado um offering separado (ex.: identifier <strong>credits_offering</strong>) contendo os dois pacotes acima. O app abre <strong>esse</strong> paywall quando o usuário já é Pro ou Pro+ e fica <strong>sem melhorias com IA</strong> (revisão completa, adaptar à vaga, etc.).</p>
+  <p>Variável de ambiente no build: <code>EXPO_PUBLIC_REVENUECAT_CREDITS_OFFERING_ID</code> (padrão no código: <code>credits_offering</code>).</p>
+  <p>O paywall de <strong>assinatura</strong> (upgrade para Pro) continua sendo o offering atual/padrão do projeto — não confundir com o de créditos.</p>
+
+  <h2>Testes / admin (Supabase)</h2>
+  <p>Para creditar saldo manualmente em ambiente de teste, a Edge Function <code>admin-credit-pack</code> no repositório do CVGen atualiza <code>profiles.ai_credits</code>. Exige segredo no servidor; não exponha token de admin no app.</p>
+  <p>Detalhes de deploy e exemplo <code>curl</code> estão no repositório do app em <code>docs/GITHUB_PAGES.md</code>.</p>
+
+  <hr />
+  <p><em>Última revisão desta página: alinhada ao fluxo de IA / RevenueCat do CVGen (2026).</em></p>
+</body>
+</html>

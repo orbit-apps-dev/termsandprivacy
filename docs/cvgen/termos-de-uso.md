@@ -36,11 +36,17 @@ Os presentes Termos de Uso (“**Termos**”) regem o acesso e o uso do aplicati
 
 3.1. O App pode oferecer **planos gratuitos** (com limitações, por exemplo, quantidade de currículos ou modelos) e **planos pagos** processados pelas **lojas oficiais** (Apple App Store / Google Play) por meio do **RevenueCat** ou mecanismo equivalente.
 
-3.2. **Pagamentos, renovações, cancelamentos e reembolsos** segem as **regras da loja** e do **distribuidor** (Apple/Google). Dúvidas sobre cobrança devem ser tratadas preferencialmente com a loja ou conosco pelo e-mail de contato.
+3.1.1. Quando disponibilizados na loja, os planos **Pro** e **Pro+** são assinaturas de **1 (um) mês com renovação automática** (“auto-renováveis”), salvo cancelamento pelo Usuário nas configurações da loja dentro do prazo aplicável.
+
+3.2. **Pagamentos, renovações, cancelamentos e reembolsos** seguem as **regras da loja** e do **distribuidor** (Apple/Google). Dúvidas sobre cobrança devem ser tratadas preferencialmente com a loja ou conosco pelo e-mail de contato.
 
 3.3. Preços e benefícios podem ser **alterados** com comunicação conforme aplicável; o uso continuado após mudanças relevantes pode implicar aceitação.
 
 3.4. **Melhorias com IA (créditos)** — Quando disponíveis, recursos de sugestão com inteligência artificial podem consumir **créditos** associados à sua conta no backend. Em **compra inicial, renovação ou reativação** de plano pago (Pro ou Pro+) processadas pelas lojas e pelo RevenueCat, podemos **creditá-lo** com uma quantidade incluída no plano, **somando** ao saldo já existente (incluindo créditos de pacotes adicionais comprados). Os valores por plano e por evento podem ser ajustados; o **acesso** às funções de IA pode exigir plano ativo e saldo suficiente, conforme indicado no App.
+
+3.5. Créditos de IA incluídos no plano e créditos adicionais comprados separadamente **só podem ser utilizados com assinatura ativa**. Se a assinatura expirar ou for cancelada, o saldo de créditos fica **congelado** até a reativação/renovação da assinatura.
+
+3.6. Pacotes de créditos adicionais (por exemplo, +10 e +30) são compras **consumíveis** e **não** constituem assinatura auto-renovável.
 
 ---
 

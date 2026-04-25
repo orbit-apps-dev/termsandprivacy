@@ -46,6 +46,8 @@ Os presentes Termos de Uso (“**Termos**”) regem o acesso e o uso do aplicati
 
 3.5. Créditos de IA incluídos no plano e créditos adicionais comprados separadamente **só podem ser utilizados com assinatura ativa**. Se a assinatura expirar ou for cancelada, o saldo de créditos fica **congelado** até a reativação/renovação da assinatura.
 
+3.5.1. O uso de recursos de IA e de créditos também exige **conta autenticada no App**. Sem login, esses recursos podem ficar indisponíveis até a autenticação.
+
 3.6. Pacotes de créditos adicionais (por exemplo, +10 e +30) são compras **consumíveis** e **não** constituem assinatura auto-renovável.
 
 ---
